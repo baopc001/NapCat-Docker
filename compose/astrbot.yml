@@ -14,6 +14,7 @@ services:
     volumes:
       - ./data:/AstrBot/data
       - ./ntqq:/app/.config/QQ
+      - ./napcat/config:/app/napcat/config
     networks:
       - astrbot_network
     mac_address: "02:42:ac:11:00:02"
@@ -29,7 +30,6 @@ services:
       - "6199:6199"
     volumes:
       - ./data:/AstrBot/data
-      - ./napcat/config:/app/napcat/config
       - ./ntqq:/app/.config/QQ
     networks:
       - astrbot_network
